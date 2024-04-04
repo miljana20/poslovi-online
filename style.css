@@ -1,0 +1,1172 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    scroll-behavior: smooth;
+    -webkit-transition: 1s;
+    transition: 1s;
+    text-wrap: wrap;
+  }
+  
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  body ul {
+    list-style: none;
+  }
+  
+  body a {
+    text-decoration: none;
+    color: #2c8414;
+  }
+  
+  body a:hover {
+    text-decoration: none;
+  }
+  
+  body h1 {
+    margin: 20px auto;
+    text-align: center;
+    color: #9c1c2c;
+    font-size: 30px;
+  }
+  
+  body h1::after {
+    display: block;
+    content: '';
+    position: relative;
+    top: 5px;
+    width: 45px;
+    height: 2.5px;
+    background-color: rgba(44, 132, 20, 0.9);
+    margin: 0px auto;
+  }
+  
+  body .bg-w {
+    background-color: white;
+  }
+  
+  body .xxs {
+    text-align: center;
+    color: rgba(44, 132, 20, 0.9);
+    font-size: 13px;
+    margin-bottom: -30px;
+  }
+  
+  body .card {
+    border-bottom: solid 2px #bbb;
+  }
+  
+  body .card div {
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  body .card div .user-img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0px 5px;
+  }
+  
+  body .card div span {
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: -2px;
+  }
+  
+  body .card .stars {
+    padding: 0px;
+    margin: 0px;
+    text-align: end;
+    font-weight: bold;
+  }
+  
+  body .card .button {
+    background-color: #711520;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 5px 8px;
+  }
+  
+  body .card .button:hover {
+    padding: 5px 12px;
+    background-color: #9c1c2c;
+  }
+  
+  body .card .price {
+    font-weight: 500;
+    text-align: end;
+    font-weight: bold;
+  }
+  
+  body header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.6);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+  }
+  
+  body header.header-bg {
+    background-color: rgba(255, 255, 255, 0.6);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+  }
+  
+  body header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  
+  body header ul li {
+    margin: 20px 5px 0px 5px;
+    padding: 0px 15px 0px 0px;
+  }
+  
+  body header ul li.profile-icon {
+    margin-top: 10px;
+  }
+  
+  body header ul li.link {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: large;
+  }
+  
+  body header ul li.link:hover a {
+    color: #777;
+    -webkit-transition: 1s;
+    transition: 1s;
+    text-decoration: none;
+  }
+  
+  body header ul li.link a {
+    color: #2c8414;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  
+  body header ul .icon a {
+    color: #777;
+  }
+  
+  body header ul .icon a:hover {
+    color: #9c1c2c;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+  body header ul .icon.profile-icon {
+    background-color: #2c8414;
+    padding: 5px 10px;
+    border-radius: 50%;
+    text-align: center;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  
+  body header ul .icon.profile-icon a {
+    color: #ffffff;
+  }
+  
+  body header ul .icon.profile-icon:hover {
+    -webkit-transition: 1s;
+    transition: 1s;
+    background-color: #777;
+  }
+  
+  body #mini-nav {
+    padding: 0px;
+    z-index: 1000000;
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 0px;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    text-align: center;
+  }
+  
+  body #mini-nav li {
+    width: 100%;
+    padding: 15px 0px;
+  }
+  
+  body #mini-nav li a {
+    color: #2c8414;
+    text-decoration: none;
+    font-size: large;
+    -webkit-transition: 1.5s;
+    transition: 1.5s;
+  }
+  
+  body #mini-nav li a:hover {
+    color: #000;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  
+  body #start {
+    padding: 0px;
+    margin: 0px;
+    height: 90vh;
+    max-height: 90vh;
+    background-image: url("./male-videographer-edits-and-cuts-footage-and-sound-2022-02-01-22-38-41-utc.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+  }
+  
+  body #start #cover {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding-top: 16vh;
+    padding-bottom: 16vh;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  body #start #cover .start-bg {
+    background-color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+    color: #711520;
+    padding-top: 5%;
+  }
+  
+  body #start #cover .start-bg h1 {
+    color: #9c1c2c;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  body #start #cover .start-bg h1::after {
+    display: none;
+  }
+  
+  body #start #cover .start-bg h1 mark {
+    color: #2c8414;
+    background-color: transparent;
+    font-weight: initial;
+  }
+  
+  body .paket {
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 2px 10px #71152083;
+            box-shadow: 0px 2px 10px #71152083;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    margin: 0px;
+    padding: 5px 0px;
+  }
+  
+  body .paket h2 {
+    text-align: center;
+    color: #711520;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  body .paket p {
+    text-align: center;
+    background-color: rgba(44, 132, 20, 0.5);
+    color: #ffffff;
+    padding: 5px;
+    font-weight: bold;
+  }
+  
+  body .paket p span {
+    margin: 0px 10px;
+    font-size: 30px;
+  }
+  
+  body .paket table td {
+    font-weight: 600;
+  }
+  
+  body .paket table th {
+    color: #2c8414;
+  }
+  
+  body .paket table .text-gray th, body .paket table .text-gray {
+    color: #bbb;
+  }
+  
+  body .paket form {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  
+  body .paket form div {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  body .paket form div .paket-btn {
+    margin: 0px auto;
+    margin-top: -15px;
+    padding: 6px 30px;
+    width: 50%;
+    background-color: #82b873;
+    border-radius: 20px;
+    color: #ffffff;
+    border: none;
+  }
+  
+  body .paket form div div {
+    width: 0px;
+  }
+  
+  body .paket form div div::after {
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    content: "\f105";
+    display: block;
+    position: absolute;
+    top: -15px;
+    left: 60%;
+    width: 35px;
+    height: 36px;
+    padding-top: 7px;
+    border-radius: 50%;
+    background-color: #82b873;
+    color: #ffffff;
+    text-align: center;
+    -webkit-transition: 1.5s;
+    transition: 1.5s;
+  }
+  
+  body .paket form div:hover div::after {
+    content: "\f101";
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  
+  body #podloga {
+    margin: 0px auto;
+    width: 100%;
+    height: 200px;
+    margin-top: -150px;
+    margin-bottom: 20px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#9c1c2c), to(#711520));
+    background-image: linear-gradient(to bottom, #9c1c2c, #711520);
+  }
+  
+  body .m0 {
+    margin: 0px;
+  }
+  
+  body #categories-header {
+    background-color: #ccc;
+    color: #ffffff;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 65.5px;
+    left: 0px;
+    z-index: 1000000;
+  }
+  
+  body #categories-header ul {
+    margin: 0px;
+  }
+  
+  body #categories-header .category {
+    display: inline-block;
+    margin: 10px 5px 10px 5px;
+    padding: 0px 15px 0px 0px;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  
+  body #categories-header .category:last-of-type {
+    border: none;
+  }
+  
+  body #categories-header .category a {
+    color: #ffffff;
+  }
+  
+  body #categories-header .category a:hover {
+    color: rgba(119, 119, 119, 0.7);
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  
+  body .cat-div {
+    z-index: 1000000;
+    margin: 0px;
+    overflow-y: scroll;
+    display: none;
+    width: 100vw;
+    height: 70vh;
+    position: fixed;
+    max-height: 70vh;
+    background-color: #bbb;
+  }
+  
+  body .cat-div::-webkit-scrollbar {
+    display: none;
+  }
+  
+  body .cat-div div {
+    margin: 10px;
+    color: #777;
+  }
+  
+  body .cat-div div h2 {
+    font-size: 20px;
+  }
+  
+  body .cat-div div h2 a {
+    color: #ffffff;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  
+  body .cat-div div h2 a:hover {
+    color: #777;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  
+  body .cat-div div hr {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  body .cat-div div ul li a {
+    color: #777;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  
+  body .cat-div div ul li a:hover {
+    color: #ffffff;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  
+  body #filter-div .cat-f {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  body #filter-div .cat-f .ch-div {
+    margin: 10px;
+  }
+  
+  body #filter-div .cat-f h4 {
+    font-size: 20px;
+    color: #444;
+  }
+  
+  body #filter-div .cat-f h4::after {
+    content: '';
+    display: block;
+    width: 30%;
+    height: 2px;
+    top: 2px;
+    position: relative;
+    background-color: rgba(113, 21, 32, 0.8);
+  }
+  
+  body #filter-div .cat-f input[type=range] {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    width: 70%;
+    height: 4px;
+    border-radius: 3px;
+    border: 1px solid #9c1c2c;
+  }
+  
+  body #filter-div .cat-f input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+            appearance: none;
+    position: relative;
+    top: -3px;
+    width: 10px;
+    height: 10px;
+    background-color: #711520;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  body #filter-div .cat-f input[type=range]::-webkit-slider-runnable-track {
+    background: -webkit-gradient(linear, left top, right top, from(#9c1c2c), color-stop(#9c1c2c), color-stop(#ffffff), to(#ffffff));
+    background: linear-gradient(to right, #9c1c2c 0%, #9c1c2c var(--value, 0%), #ffffff var(--value, 0%), #ffffff 100%);
+    height: 4px;
+    border-radius: 3px;
+    border: 1px solid #9c1c2c;
+  }
+  
+  body #filter-div .cat-f input[type=checkbox] {
+    display: none;
+  }
+  
+  body #filter-div .cat-f input[type=checkbox] + label {
+    display: block;
+    cursor: pointer;
+    margin: 3px;
+    padding: 2px;
+  }
+  
+  body #filter-div .cat-f input[type=checkbox] + label:before {
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    content: "\f00c";
+    padding-left: 3.5px;
+    padding-bottom: 6px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    vertical-align: bottom;
+    color: transparent;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  
+  body #filter-div .cat-f input[type=checkbox] + label:active:before {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  
+  body #filter-div .cat-f input[type=checkbox]:checked + label:before {
+    background-color: #711520;
+    border-color: #711520;
+    color: #ffffff;
+  }
+  
+  body #filter-div .cat-f input[type=checkbox]:disabled + label:before {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    border-color: #aaa;
+  }
+  
+  body #filter-div .cat-f input[type=checkbox]:checked:disabled + label:before {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    background-color: rgba(113, 21, 32, 0.5);
+    border-color: rgba(119, 119, 119, 0.5);
+  }
+  
+  body #filter-div .cat-f select {
+    padding: 5px;
+    color: #711520;
+  }
+  
+  body #filter-div .cat-f select option:hover {
+    background-color: #711520;
+  }
+  
+  body #filter-div .cat-f input[type=text], body #filter-div .cat-f select {
+    width: 75%;
+    border: none;
+    border-bottom: solid 1px #711520;
+  }
+  
+  body #filter-div .cat-f input[type=text]:focus, body #filter-div .cat-f select:focus {
+    outline: none;
+  }
+  
+  body #filter-div .cat-f input[type=text]::-webkit-input-placeholder, body #filter-div .cat-f select::-webkit-input-placeholder {
+    color: #777;
+  }
+  
+  body #filter-div .cat-f input[type=text]:-ms-input-placeholder, body #filter-div .cat-f select:-ms-input-placeholder {
+    color: #777;
+  }
+  
+  body #filter-div .cat-f input[type=text]::-ms-input-placeholder, body #filter-div .cat-f select::-ms-input-placeholder {
+    color: #777;
+  }
+  
+  body #filter-div .cat-f input[type=text]::placeholder, body #filter-div .cat-f select::placeholder {
+    color: #777;
+  }
+  
+  body #filter-div .cat-f input[type=text] option, body #filter-div .cat-f select option {
+    background-color: #ffffff;
+    color: #711520;
+  }
+  
+  body #filter-div .cat-f input[type=text] option:hover, body #filter-div .cat-f select option:hover {
+    background-color: #711520;
+    color: #ffffff;
+  }
+  
+  body #services-div .card {
+    border-bottom: solid 1px #ddd;
+  }
+  
+  body #services-div .card:hover {
+    border: none;
+    -webkit-box-shadow: 0px 0px 30px #711520;
+            box-shadow: 0px 0px 30px #711520;
+    cursor: pointer;
+  }
+  
+  body .page-link {
+    color: #711520;
+  }
+  
+  body .page-link:hover {
+    color: #777;
+  }
+  
+  body #product-div {
+    width: 100vw;
+    background-color: rgba(187, 187, 187, 0.2);
+    margin: 0px;
+  }
+  
+  body #product-div #product-holder {
+    -webkit-box-shadow: 0px 0px 30px #777;
+            box-shadow: 0px 0px 30px #777;
+    width: 95%;
+    margin: auto auto;
+  }
+  
+  body #product-div #product-holder p {
+    text-align: end;
+    color: #777;
+  }
+  
+  body #product-div #product-holder #product-data p {
+    text-align: start;
+  }
+  
+  body #product-div #product-holder #product-data h2 {
+    text-align: start;
+  }
+  
+  body #product-div #product-holder #product-img .u-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 10px;
+  }
+  
+  body #contact {
+    background-image: url("./young-people-sharing-digital-content-on-marketing-2022-12-09-04-44-35-utc.jpg");
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  body #contact #cover {
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(39, 7, 10, 0.9)), to(rgba(191, 32, 51, 0.9)));
+    background-image: linear-gradient(to right, rgba(39, 7, 10, 0.9), rgba(191, 32, 51, 0.9));
+    margin: auto 0px;
+  }
+  
+  body #contact #cover div {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    max-width: 1000px;
+    max-height: 400px;
+  }
+  
+  body #contact #cover #contact-form-div {
+    margin: auto auto;
+    padding: 10px;
+  }
+  
+  body #contact #cover #contact-form-div h2 {
+    font-size: 25px;
+    text-align: center;
+    color: #711520;
+  }
+  
+  body #contact #cover #contact-form-div .c-e-div {
+    width: 100%;
+  }
+  
+  body #contact #cover #contact-form-div .c-e-div input[type='email'], body #contact #cover #contact-form-div .c-e-div input[type='text'], body #contact #cover #contact-form-div .c-e-div textarea {
+    width: 100%;
+    margin: 0px auto;
+    border: none;
+    border-bottom: solid 1px #9c1c2c;
+    color: #711520;
+  }
+  
+  body #contact #cover #contact-form-div .c-e-div input[type='email']::-webkit-input-placeholder, body #contact #cover #contact-form-div .c-e-div input[type='text']::-webkit-input-placeholder, body #contact #cover #contact-form-div .c-e-div textarea::-webkit-input-placeholder {
+    font-size: 10px;
+    padding-bottom: 5px;
+  }
+  
+  body #contact #cover #contact-form-div .c-e-div input[type='email']:-ms-input-placeholder, body #contact #cover #contact-form-div .c-e-div input[type='text']:-ms-input-placeholder, body #contact #cover #contact-form-div .c-e-div textarea:-ms-input-placeholder {
+    font-size: 10px;
+    padding-bottom: 5px;
+  }
+  
+  body #contact #cover #contact-form-div .c-e-div input[type='email']::-ms-input-placeholder, body #contact #cover #contact-form-div .c-e-div input[type='text']::-ms-input-placeholder, body #contact #cover #contact-form-div .c-e-div textarea::-ms-input-placeholder {
+    font-size: 10px;
+    padding-bottom: 5px;
+  }
+  
+  body #contact #cover #contact-form-div .c-e-div input[type='email']::placeholder, body #contact #cover #contact-form-div .c-e-div input[type='text']::placeholder, body #contact #cover #contact-form-div .c-e-div textarea::placeholder {
+    font-size: 10px;
+    padding-bottom: 5px;
+  }
+  
+  body #contact #cover #contact-form-div .c-e-div input[type='email']:focus, body #contact #cover #contact-form-div .c-e-div input[type='text']:focus, body #contact #cover #contact-form-div .c-e-div textarea:focus {
+    outline: none;
+  }
+  
+  body #contact #cover #contact-form-div .c-e-div input[type='email'], body #contact #cover #contact-form-div .c-e-div input[type='text'] {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  
+  body #contact #cover #contact-form-div .c-e-div input[type='button'] {
+    padding: 8px 30px;
+    border: none;
+    background-image: -webkit-gradient(linear, left top, right top, from(#711520), to(#9c1c2c));
+    background-image: linear-gradient(to right, #711520, #9c1c2c);
+    color: #ffffff;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  
+  body #contact #cover #contact-form-div .c-e-div input[type='button']:hover {
+    background-image: -webkit-gradient(linear, left top, right top, from(#9c1c2c), to(#711520));
+    background-image: linear-gradient(to right, #9c1c2c, #711520);
+    padding: 8px 35px;
+    border-radius: 20px;
+  }
+  
+  body #contact #cover #contact-data {
+    margin: auto 0px;
+  }
+  
+  body #contact #cover #contact-data .c-data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 10px;
+  }
+  
+  body #contact #cover #contact-data .c-data div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 5px;
+    background-color: rgba(113, 21, 32, 0.2);
+    text-align: center;
+    color: #711520;
+    padding-top: 13px;
+  }
+  
+  body #contact #cover #contact-data .c-data span {
+    margin: auto 0px;
+    color: #777;
+  }
+  
+  body #auth {
+    background-image: url("./african-american-man-sitting-in-front-of-computer-2022-11-15-05-59-50-utc.jpg");
+    width: 100%;
+    height: 150vh;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  body #auth #cover {
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(39, 7, 10, 0.9)), to(rgba(191, 32, 51, 0.9)));
+    background-image: linear-gradient(to right, rgba(39, 7, 10, 0.9), rgba(191, 32, 51, 0.9));
+    padding: 0px 10px;
+    margin: 0px;
+  }
+  
+  body #auth #cover div {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    max-width: 1000px;
+  }
+  
+  body #auth #cover div h2 {
+    color: #711520;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  body #auth #cover div p {
+    text-align: center;
+    font-size: 15px;
+    color: #711520;
+    margin-bottom: -8px;
+  }
+  
+  body #auth #cover div #auth-form-div {
+    margin: auto auto;
+    padding: 30px 10px;
+  }
+  
+  body #auth #cover div #auth-form-div h2 {
+    font-size: 25px;
+    text-align: center;
+    color: #711520;
+  }
+  
+  body #auth #cover div #auth-form-div form {
+    width: 100%;
+  }
+  
+  body #auth #cover div #auth-form-div .c-e-div {
+    width: 100%;
+  }
+  
+  body #auth #cover div #auth-form-div .c-e-div input[type=file] {
+    color: #711520;
+  }
+  
+  body #auth #cover div #auth-form-div .c-e-div input[type=file]::-webkit-file-upload-button {
+    padding: 8px 30px;
+    border: none;
+    background-image: -webkit-gradient(linear, left top, right top, from(#711520), to(#9c1c2c));
+    background-image: linear-gradient(to right, #711520, #9c1c2c);
+    color: #ffffff;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  
+  body #auth #cover div #auth-form-div .c-e-div input[type=file]::-webkit-file-upload-button:hover {
+    background-image: -webkit-gradient(linear, left top, right top, from(#9c1c2c), to(#711520));
+    background-image: linear-gradient(to right, #9c1c2c, #711520);
+    padding: 8px 35px;
+    border-radius: 20px;
+  }
+  
+  body #auth #cover div #auth-form-div .c-e-div input[type='email'], body #auth #cover div #auth-form-div .c-e-div input[type='text'], body #auth #cover div #auth-form-div .c-e-div input[type='password'], body #auth #cover div #auth-form-div .c-e-div textarea {
+    width: 100%;
+    margin: 0px auto;
+    border: none;
+    border-bottom: solid 1px #9c1c2c;
+    color: #711520;
+  }
+  
+  body #auth #cover div #auth-form-div .c-e-div input[type='email']::-webkit-input-placeholder, body #auth #cover div #auth-form-div .c-e-div input[type='text']::-webkit-input-placeholder, body #auth #cover div #auth-form-div .c-e-div input[type='password']::-webkit-input-placeholder, body #auth #cover div #auth-form-div .c-e-div textarea::-webkit-input-placeholder {
+    font-size: 10px;
+    padding-bottom: 5px;
+  }
+  
+  body #auth #cover div #auth-form-div .c-e-div input[type='email']:-ms-input-placeholder, body #auth #cover div #auth-form-div .c-e-div input[type='text']:-ms-input-placeholder, body #auth #cover div #auth-form-div .c-e-div input[type='password']:-ms-input-placeholder, body #auth #cover div #auth-form-div .c-e-div textarea:-ms-input-placeholder {
+    font-size: 10px;
+    padding-bottom: 5px;
+  }
+  
+  body #auth #cover div #auth-form-div .c-e-div input[type='email']::-ms-input-placeholder, body #auth #cover div #auth-form-div .c-e-div input[type='text']::-ms-input-placeholder, body #auth #cover div #auth-form-div .c-e-div input[type='password']::-ms-input-placeholder, body #auth #cover div #auth-form-div .c-e-div textarea::-ms-input-placeholder {
+    font-size: 10px;
+    padding-bottom: 5px;
+  }
+  
+  body #auth #cover div #auth-form-div .c-e-div input[type='email']::placeholder, body #auth #cover div #auth-form-div .c-e-div input[type='text']::placeholder, body #auth #cover div #auth-form-div .c-e-div input[type='password']::placeholder, body #auth #cover div #auth-form-div .c-e-div textarea::placeholder {
+    font-size: 10px;
+    padding-bottom: 5px;
+  }
+  
+  body #auth #cover div #auth-form-div .c-e-div input[type='email']:focus, body #auth #cover div #auth-form-div .c-e-div input[type='text']:focus, body #auth #cover div #auth-form-div .c-e-div input[type='password']:focus, body #auth #cover div #auth-form-div .c-e-div textarea:focus {
+    outline: none;
+  }
+  
+  body #auth #cover div #auth-form-div .c-e-div input[type='email'], body #auth #cover div #auth-form-div .c-e-div input[type='text'], body #auth #cover div #auth-form-div .c-e-div input[type='password'], body #auth #cover div #auth-form-div .c-e-div input[type='file'] {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  
+  body #auth #cover div #auth-form-div .c-e-div input[type='button'] {
+    padding: 8px 30px;
+    border: none;
+    background-image: -webkit-gradient(linear, left top, right top, from(#711520), to(#9c1c2c));
+    background-image: linear-gradient(to right, #711520, #9c1c2c);
+    color: #ffffff;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  
+  body #auth #cover div #auth-form-div .c-e-div input[type='button']:hover {
+    background-image: -webkit-gradient(linear, left top, right top, from(#9c1c2c), to(#711520));
+    background-image: linear-gradient(to right, #9c1c2c, #711520);
+    padding: 8px 35px;
+    border-radius: 20px;
+  }
+  
+  body #inbox {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    padding: 20px 10px;
+    background-color: rgba(187, 187, 187, 0.2);
+    height: 80vh;
+    max-height: 80vh;
+  }
+  
+  body #inbox #chat-list {
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 3px 25px rgba(119, 119, 119, 0.6);
+            box-shadow: 0px 3px 25px rgba(119, 119, 119, 0.6);
+    border-radius: 10px;
+    padding: 20px;
+    overflow-y: scroll;
+    max-height: 70vh;
+  }
+  
+  body #inbox #chat-list::-webkit-scrollbar {
+    display: none;
+  }
+  
+  body #inbox #chat-list div div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  body #inbox #chat-list div div .list-img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  body #inbox #chat-list div div span {
+    font-weight: bold;
+  }
+  
+  body #inbox #chat-list div div span.new-message {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(44, 132, 20, 0.5);
+    position: absolute;
+  }
+  
+  body #inbox #sh {
+    -webkit-box-shadow: 0px 3px 25px rgba(119, 119, 119, 0.6);
+            box-shadow: 0px 3px 25px rgba(119, 119, 119, 0.6);
+    border-radius: 10px;
+    max-height: 70vh;
+    background-color: #ffffff;
+  }
+  
+  body #inbox #sh #chat {
+    background-color: rgba(44, 132, 20, 0.3);
+    overflow-y: scroll;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  body #inbox #sh #chat::-webkit-scrollbar {
+    display: none;
+  }
+  
+  body #inbox #sh #chat #user {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    background-color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 15px;
+  }
+  
+  body #inbox #sh #chat #user .list-img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  body #inbox #sh #chat #user span {
+    font-weight: bold;
+  }
+  
+  body #inbox #sh #chat #messages {
+    padding: 20px;
+    width: 100%;
+    height: 50vh;
+  }
+  
+  body #inbox #sh #chat #messages .l {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  body #inbox #sh #chat #messages .r {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-margin-start: auto;
+            margin-inline-start: auto;
+  }
+  
+  body #inbox #sh #chat #messages .list-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  body #inbox #sh #chat #messages .message {
+    background-color: #ffffff;
+    padding: 5px 30px;
+    width: 60%;
+    margin: 10px 0px;
+  }
+  
+  body #inbox #sh #chat #messages .message.a-r {
+    border-radius: 20px 20px 0px 20px;
+    -webkit-margin-start: auto;
+            margin-inline-start: auto;
+  }
+  
+  body #inbox #sh #chat #messages .message.a-l {
+    border-radius: 20px 20px 20px 0px;
+  }
+  
+  body #inbox #inbox-send {
+    width: 100%;
+    background-color: #ffffff;
+  }
+  
+  body #inbox #inbox-send form {
+    width: 100%;
+    margin: 0px auto;
+    padding: 10px;
+    background-color: #ffffff;
+  }
+  
+  body #inbox #inbox-send form div {
+    width: 90%;
+    margin: 0px auto;
+  }
+  
+  body #inbox #inbox-send form div input {
+    width: 90%;
+    height: 30px;
+    border: none;
+    border-bottom: solid 1px rgba(44, 132, 20, 0.5);
+    padding: 5px;
+  }
+  
+  body #inbox #inbox-send form div input:focus {
+    outline: none;
+  }
+  
+  body #inbox #inbox-send form div input::-webkit-input-placeholder {
+    font-size: 15px;
+    color: rgba(44, 132, 20, 0.5);
+  }
+  
+  body #inbox #inbox-send form div input:-ms-input-placeholder {
+    font-size: 15px;
+    color: rgba(44, 132, 20, 0.5);
+  }
+  
+  body #inbox #inbox-send form div input::-ms-input-placeholder {
+    font-size: 15px;
+    color: rgba(44, 132, 20, 0.5);
+  }
+  
+  body #inbox #inbox-send form div input::placeholder {
+    font-size: 15px;
+    color: rgba(44, 132, 20, 0.5);
+  }
+  
+  body #inbox #inbox-send form div button {
+    border: none;
+    color: rgba(44, 132, 20, 0.5);
+    background-color: transparent;
+  }
+  
+  body footer {
+    width: 100vw;
+    background-color: #711520;
+    color: #ffffff;
+  }
+  
+  body footer div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  body footer div div.i {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    padding: 8px 3px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  body footer div div.i a {
+    color: #ffffff;
+  }
+  
+  body footer div div.i:hover {
+    background-color: rgba(156, 28, 44, 0.3);
+  }
+  
+  body footer div div.i:hover a {
+    color: #ffffff;
+  }
+  
+  body footer div p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  body footer div p mark {
+    color: #ffffff;
+    background-color: transparent;
+  }
+  /*# sourceMappingURL=style.css.map */
