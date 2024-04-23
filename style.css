@@ -283,8 +283,8 @@ body #auth-div li:hover a {
 body #start {
   padding: 0px;
   margin: 0px;
-  height: 90vh;
-  max-height: 90vh;
+  height: 100vh;
+  max-height: 100vh;
   background-image: url("./male-videographer-edits-and-cuts-footage-and-sound-2022-02-01-22-38-41-utc.jpg");
   background-position: center;
   background-size: cover;
