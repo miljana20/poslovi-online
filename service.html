@@ -778,8 +778,67 @@
         </div>
     </div>
 </div>
-<div id="recenzije" class='m-md-5 m-1 w-100'>
-    <h2>Recenzije...</h2>
+<div id="rec" class='p-md-5 p-1 py-5 w-100'>
+    <div class="mx-auto" id='recenzije'>
+        <h2 class='service-h2'>Recenzije korisnika:</h2>
+        <div class="recenzija row justify-content-cemter">
+            <div class='r-img col-md-2 col-10 row justify-content-start justify-content-md-end'>
+                <img src="./img/pexels8.jpg" alt="x"/>
+            </div>
+            <div class='r-text col-10'>
+                <p>Recenzija quick example text to build on the card title and make up the bulk of the card's content.Opis quick example text to build on the card title and make up the bulk of the card's content.Opis quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <div class="ocjena col-12 text-right">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+        <div class="recenzija row justify-content-cemter">
+            <div class='r-img col-md-2 col-10 row justify-content-start justify-content-md-end'>
+                <img src="./pexels8.jpg" alt="x"/>
+            </div>
+            <div class='r-text col-10'>
+                <p>Recenzija quick example text to f the card's content.</p>
+            </div>
+            <div class="ocjena col-12 text-right">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+        <div class="recenzija row justify-content-cemter">
+            <div class='r-img col-md-2 col-10 row justify-content-start justify-content-md-end'>
+                <img src="./pexels8.jpg" alt="x"/>
+            </div>
+            <div class='r-text col-10'>
+                <p>Recenzija quick example text to build on the ct to build on the card title and make up the bulk of the card's content.Opis quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <div class="ocjena col-12 text-right">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+    </div>
+    <div id="rec-form">
+        <h2 class="service-h2">Ocenite proizvod:</h2>
+        <form action="" method="">
+            <textarea name="recenzija" id="recenzija"></textarea>
+            <fieldset>
+                <span class="star-cb-group">
+                    <input type="radio" id="rating-1" name="rating" value="1"/><label for="rating-1" onmouseover='getStars("1")'>1</label>
+                    <input type="radio" id="rating-2" name="rating" value="2"/><label for="rating-2" onmouseover='getStars("2")'>2</label>
+                    <input type="radio" id="rating-3" name="rating" value="3"/><label for="rating-3" onmouseover='getStars("3")'>3</label>
+                    <input type="radio" id="rating-4" name="rating" value="4"/><label for="rating-4" onmouseover='getStars("4")'>4</label>
+                    <input type="radio" id="rating-5" name="rating" value="5"/><label for="rating-5" onmouseover='getStars("5")'>5</label>
+                </span>
+            </fieldset>
+        </form>
+    </div>
 </div>
 
 <footer class='w-100'>
