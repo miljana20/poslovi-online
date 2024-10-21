@@ -1,0 +1,786 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Laravel">
+    <meta name="keyword" content="laravel">
+
+    <link rel="shortcut icon" href="./services.html">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css" type="text/css"/>
+
+    <!-- title -->
+    <title> Home | Poslovi online</title>
+
+    <!-- bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src='./main.js'></script>
+
+</head>
+<div id="preloader" class='row justify-content-center'>
+    <div class="col-1 my-auto" id='prel-logo'>
+        <div class="front">
+            <img src="./preloader.png" alt="preloader" class='img-fluid'/>
+        </div>
+        <div class="shad"></div>
+    </div>
+</div>
+<header class='row justify-content-between w-100 header-bg'>
+    <div class="col-6 col-md-2">
+        <a href="./home.html"><img src="./logo2.png" alt="logo 2" class='h-img'/></a>
+    </div>
+    <div class="col-lg-8 col-md-7 d-none d-lg-block">
+    <ul>
+        <li class="link category" data-target='category1'><a href="./services.html">category 1</a></li>
+        <li class="link category" data-target='category2'><a href="./services.html">category 2</a></li>
+        <li class="link category" data-target='category3'><a href="./services.html">category 3</a></li>
+        <li class="link category" data-target='category4'><a href="./services.html">category 4</a></li>
+        <li class="link category" data-target='category5'><a href="./services.html">category 5</a></li>
+    </ul>
+    </div>
+    <div class="col-6 col-md-3 col-lg-2 text-end">
+    <ul>
+        <li class="icon"><a href="./favourites.html"><i class="far fa-heart"></i></a></li>
+        <li class="icon"><a href="./message.html"><i class="fas fa-inbox"></i></a></li>
+        <li class="icon"><a href="./cart.html"><i class="fas fa-shopping-basket"></i></a></li>
+        <li class="icon profile-icon d-none d-lg-block"><a href="./profile.html"><i class="fas fa-user"></i></a></li>
+        <li class="icon pt-1 d-block d-lg-none"><a href="#!" id="hamburgercic"><i class="fas fa-bars"></i></a></li>
+    </ul>
+    </div>
+</header>
+<div id="auth-div">
+    <ul>
+        <li><a href="./profile.html">Moj Profil</a></li>
+        <li><a href="#!" id="l-modal">Prijava</a></li>
+        <li><a href="#!" id="r-modal">Registracija</a></li>
+    </ul>
+</div>
+<div id="mini-nav">
+    <ul>
+        <li><a href="./home.html">Početna</a></li>
+        <li><a href="./services.html">Ponuda</a></li>
+        <li><a href="./profile.html">Moj Profil</a></li>
+        <li><a href="#!" id="l-modal-m">Prijava</a></li>
+        <li><a href="#!" id="r-modal-m">Registracija</a></li>
+    </ul>
+</div>
+<div id="modal-bg">
+    <div id="modal-l" class="p-5 rounded">
+        <span class="close-login-modal">x</span>
+        <h2>Prijavite se</h2>
+        <form action="" method='' id='login-form'>
+            <div class="c-e-div">
+                <input type="text" name="login-email" id="login-email" placeholder='Email ili korisničko ime'/>
+            </div>
+            <div class="c-e-div">
+                <input type="password" name="login-password" id="login-password" placeholder='Lozinka'/>
+            </div>
+            <div class="c-e-div">
+                <input type="button" value="Prijavi se" id='login-message-btn'>
+            </div>
+        </form>
+    </div>
+    <div id="modal-r" class="p-5 rounded">
+        <span class="close-login-modal r">x</span>
+        <h2>Registrujte se</h2>
+        <form action="" method='' id='registar-form'>
+                    <div class="c-e-div">
+                        <input type="text" name="registar-fullname" id="registar-fullname" placeholder='Puno ime'/>
+                    </div>
+                    <div class="c-e-div">
+                        <input type="email" name="registar-email" id="registar-email" placeholder='Email'/>
+                    </div>
+                    <div class="c-e-div">
+                        <input type="text" name="registar-username" id="registar-username" placeholder='Korisničko ime'/>
+                    </div>
+                    <div class="c-e-div">
+                        <input type="password" name="registar-password" id="registar-password" placeholder='Lozinka'/>
+                    </div>
+                    <div class="c-e-div">
+                        <input type="password" name="registar-passwordc" id="registar-passwordc" placeholder='Potvrdite lozinku'/>
+                    </div>
+                    <div class="c-e-div">
+                        <input type="file" name="registar-img" id="registar-img" value='img'/>
+                    </div>
+                    <div class="c-e-div">
+                        <input type="button" value="Registruj se" id='registar-message-btn'>
+                    </div>
+                </form>
+    </div>
+</div>
+
+<div id="category1" class='cat-div row justify-content-center'>
+        <div class="col-md-2 col">
+            <h2><a href="./services.html">1.Subcategory 1</a></h2>
+            <hr/>
+            <ul>
+                    <li><a href="./services.html">Subsubcategory 1.1</a></li>
+                    <li><a href="./services.html">Subsubcategory 1.2</a></li>
+                    <li><a href="./services.html">Subsubcategory 1.3</a></li>
+                    <li><a href="./services.html">Subsubcategory 1.4</a></li>
+            </ul>
+        </div>
+        <div class="col-md-2 col">
+            <h2><a href=./services.html"./services.html">1.Subcategory 2</a></h2>
+            <hr/>
+            <ul>
+                <li><a href="./services.html">Subsubcategory 2.1</a></li>
+                <li><a href="./services.html">Subsubcategory 2.2</a></li>
+                <li><a href="./services.html">Subsubcategory 2.3</a></li>
+                <li><a href="./services.html">Subsubcategory 2.4</a></li>
+            </ul>
+        </div>
+        <div class="col-md-2 col">
+            <h2><a href="./services.html">1.Subcategory 3</a></h2>
+            <hr/>
+            <ul>
+                <li><a href="./services.html">Subsubcategory 3.1</a></li>
+                <li><a href="./services.html">Subsubcategory 3.2</a></li>
+                <li><a href="./services.html">Subsubcategory 3.3</a></li>
+                <li><a href="./services.html">Subsubcategory 3.4</a></li>
+            </ul>
+        </div>
+        <div class="col-md-2 col">
+            <h2><a href="./services.html">1.Subcategory 4</a></h2>
+            <hr/>
+            <ul>
+                <li><a href="./services.html">Subsubcategory 4.1</a></li>
+                <li><a href="./services.html">Subsubcategory 4.2</a></li>
+                <li><a href="./services.html">Subsubcategory 4.3</a></li>
+                <li><a href="./services.html">Subsubcategory 4.4</a></li>
+            </ul>
+        </div>
+        <div class="col-md-2 col">
+            <h2><a href="./services.html">1.Subcategory 5</a></h2>
+            <hr/>
+            <ul>
+                <li><a href="./services.html">Subsubcategory 5.1</a></li>
+                <li><a href="./services.html">Subsubcategory 5.2</a></li>
+                <li><a href="./services.html">Subsubcategory 5.3</a></li>
+                <li><a href="./services.html">Subsubcategory 5.4</a></li>
+            </ul>
+        </div>
+        <div class="col-md-2 col">
+            <h2><a href="./services.html">1.Subcategory 6</a></h2>
+            <hr/>
+            <ul>
+                <li><a href="./services.html">Subsubcategory 6.1</a></li>
+                <li><a href="./services.html">Subsubcategory 6.2</a></li>
+                <li><a href="./services.html">Subsubcategory 6.3</a></li>
+                <li><a href="./services.html">Subsubcategory 6.4</a></li>
+            </ul>
+        </div>
+        <div class="col-md-2 col">
+            <h2><a href="./services.html">1.Subcategory 7</a></h2>
+            <hr/>
+            <ul>
+                <li><a href="./services.html">Subsubcategory 7.1</a></li>
+                <li><a href="./services.html">Subsubcategory 7.2</a></li>
+                <li><a href="./services.html">Subsubcategory 7.3</a></li>
+                <li><a href="./services.html">Subsubcategory 7.4</a></li>
+            </ul>
+        </div>
+        <div class="col-md-2 col">
+            <h2><a href="./services.html">1.Subcategory 8</a></h2>
+            <hr/>
+            <ul>
+                <li><a href="./services.html">Subsubcategory 8.1</a></li>
+                <li><a href="./services.html">Subsubcategory 8.2</a></li>
+                <li><a href="./services.html">Subsubcategory 8.3</a></li>
+                <li><a href="./services.html">Subsubcategory 8.4</a></li>
+            </ul>
+        </div>
+        <div class="col-md-2 col">
+            <h2><a href="./services.html">1.Subcategory 9</a></h2>
+            <hr/>
+            <ul>
+                <li><a href="./services.html">Subsubcategory 9.1</a></li>
+                <li><a href="./services.html">Subsubcategory 9.2</a></li>
+                <li><a href="./services.html">Subsubcategory 9.3</a></li>
+                <li><a href="./services.html">Subsubcategory 9.4</a></li>
+            </ul>
+        </div>
+        <div class="col-md-2 col">
+            <h2><a href="./services.html">1.Subcategory 10</a></h2>
+            <hr/>
+            <ul>
+                <li><a href="./services.html">Subsubcategory 10.1</a></li>
+                <li><a href="./services.html">Subsubcategory 10.2</a></li>
+                <li><a href="./services.html">Subsubcategory 10.3</a></li>
+                <li><a href="./services.html">Subsubcategory 10.4</a></li>
+            </ul>
+        </div>
+        <div class="col-md-2 col">
+            <h2><a href="./services.html">1.Subcategory 11</a></h2>
+            <hr/>
+            <ul>
+                <li><a href="./services.html">Subsubcategory 11.1</a></li>
+                <li><a href="./services.html">Subsubcategory 11.2</a></li>
+                <li><a href="./services.html">Subsubcategory 11.3</a></li>
+                <li><a href="./services.html">Subsubcategory 11.4</a></li>
+            </ul>
+        </div>
+        <div class="col-md-2 col">
+            <h2><a href="./services.html">1.Subcategory 12</a></h2>
+            <hr/>
+            <ul>
+                <li><a href="./services.html">Subsubcategory 12.1</a></li>
+                <li><a href="./services.html">Subsubcategory 12.2</a></li>
+                <li><a href="./services.html">Subsubcategory 12.3</a></li>
+                <li><a href="./services.html">Subsubcategory 12.4</a></li>
+            </ul>
+        </div>
+</div>
+<div id="category2" class='cat-div row justify-content-center'>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">2.Subcategory 1</a></h2>
+        <hr/>
+        <ul>
+                <li><a href="./services.html">Subsubcategory 1.1</a></li>
+                <li><a href="./services.html">Subsubcategory 1.2</a></li>
+                <li><a href="./services.html">Subsubcategory 1.3</a></li>
+                <li><a href="./services.html">Subsubcategory 1.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">2.Subcategory 2</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 2.1</a></li>
+            <li><a href="./services.html">Subsubcategory 2.2</a></li>
+            <li><a href="./services.html">Subsubcategory 2.3</a></li>
+            <li><a href="./services.html">Subsubcategory 2.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">2.Subcategory 3</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 3.1</a></li>
+            <li><a href="./services.html">Subsubcategory 3.2</a></li>
+            <li><a href="./services.html">Subsubcategory 3.3</a></li>
+            <li><a href="./services.html">Subsubcategory 3.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">2.Subcategory 4</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 4.1</a></li>
+            <li><a href="./services.html">Subsubcategory 4.2</a></li>
+            <li><a href="./services.html">Subsubcategory 4.3</a></li>
+            <li><a href="./services.html">Subsubcategory 4.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">2.Subcategory 5</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 5.1</a></li>
+            <li><a href="./services.html">Subsubcategory 5.2</a></li>
+            <li><a href="./services.html">Subsubcategory 5.3</a></li>
+            <li><a href="./services.html">Subsubcategory 5.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">2.Subcategory 6</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 6.1</a></li>
+            <li><a href="./services.html">Subsubcategory 6.2</a></li>
+            <li><a href="./services.html">Subsubcategory 6.3</a></li>
+            <li><a href="./services.html">Subsubcategory 6.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">2.Subcategory 7</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 7.1</a></li>
+            <li><a href="./services.html">Subsubcategory 7.2</a></li>
+            <li><a href="./services.html">Subsubcategory 7.3</a></li>
+            <li><a href="./services.html">Subsubcategory 7.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">2.Subcategory 8</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 8.1</a></li>
+            <li><a href="./services.html">Subsubcategory 8.2</a></li>
+            <li><a href="./services.html">Subsubcategory 8.3</a></li>
+            <li><a href="./services.html">Subsubcategory 8.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">2.Subcategory 9</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 9.1</a></li>
+            <li><a href="./services.html">Subsubcategory 9.2</a></li>
+            <li><a href="./services.html">Subsubcategory 9.3</a></li>
+            <li><a href="./services.html">Subsubcategory 9.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">2.Subcategory 10</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 10.1</a></li>
+            <li><a href="./services.html">Subsubcategory 10.2</a></li>
+            <li><a href="./services.html">Subsubcategory 10.3</a></li>
+            <li><a href="./services.html">Subsubcategory 10.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">2.Subcategory 11</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 11.1</a></li>
+            <li><a href="./services.html">Subsubcategory 11.2</a></li>
+            <li><a href="./services.html">Subsubcategory 11.3</a></li>
+            <li><a href="./services.html">Subsubcategory 11.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">2.Subcategory 12</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 12.1</a></li>
+            <li><a href="./services.html">Subsubcategory 12.2</a></li>
+            <li><a href="./services.html">Subsubcategory 12.3</a></li>
+            <li><a href="./services.html">Subsubcategory 12.4</a></li>
+        </ul>
+    </div>
+</div>
+<div id="category3" class='cat-div row justify-content-center'>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">3.Subcategory 1</a></h2>
+        <hr/>
+        <ul>
+                <li><a href="./services.html">Subsubcategory 1.1</a></li>
+                <li><a href="./services.html">Subsubcategory 1.2</a></li>
+                <li><a href="./services.html">Subsubcategory 1.3</a></li>
+                <li><a href="./services.html">Subsubcategory 1.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">3.Subcategory 2</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 2.1</a></li>
+            <li><a href="./services.html">Subsubcategory 2.2</a></li>
+            <li><a href="./services.html">Subsubcategory 2.3</a></li>
+            <li><a href="./services.html">Subsubcategory 2.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">3.Subcategory 3</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 3.1</a></li>
+            <li><a href="./services.html">Subsubcategory 3.2</a></li>
+            <li><a href="./services.html">Subsubcategory 3.3</a></li>
+            <li><a href="./services.html">Subsubcategory 3.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">3.Subcategory 4</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 4.1</a></li>
+            <li><a href="./services.html">Subsubcategory 4.2</a></li>
+            <li><a href="./services.html">Subsubcategory 4.3</a></li>
+            <li><a href="./services.html">Subsubcategory 4.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">3.Subcategory 5</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 5.1</a></li>
+            <li><a href="./services.html">Subsubcategory 5.2</a></li>
+            <li><a href="./services.html">Subsubcategory 5.3</a></li>
+            <li><a href="./services.html">Subsubcategory 5.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">3.Subcategory 6</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 6.1</a></li>
+            <li><a href="./services.html">Subsubcategory 6.2</a></li>
+            <li><a href="./services.html">Subsubcategory 6.3</a></li>
+            <li><a href="./services.html">Subsubcategory 6.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">3.Subcategory 7</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 7.1</a></li>
+            <li><a href="./services.html">Subsubcategory 7.2</a></li>
+            <li><a href="./services.html">Subsubcategory 7.3</a></li>
+            <li><a href="./services.html">Subsubcategory 7.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">3.Subcategory 8</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 8.1</a></li>
+            <li><a href="./services.html">Subsubcategory 8.2</a></li>
+            <li><a href="./services.html">Subsubcategory 8.3</a></li>
+            <li><a href="./services.html">Subsubcategory 8.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">3.Subcategory 9</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 9.1</a></li>
+            <li><a href="./services.html">Subsubcategory 9.2</a></li>
+            <li><a href="./services.html">Subsubcategory 9.3</a></li>
+            <li><a href="./services.html">Subsubcategory 9.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">3.Subcategory 10</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 10.1</a></li>
+            <li><a href="./services.html">Subsubcategory 10.2</a></li>
+            <li><a href="./services.html">Subsubcategory 10.3</a></li>
+            <li><a href="./services.html">Subsubcategory 10.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">3.Subcategory 11</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 11.1</a></li>
+            <li><a href="./services.html">Subsubcategory 11.2</a></li>
+            <li><a href="./services.html">Subsubcategory 11.3</a></li>
+            <li><a href="./services.html">Subsubcategory 11.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">3.Subcategory 12</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 12.1</a></li>
+            <li><a href="./services.html">Subsubcategory 12.2</a></li>
+            <li><a href="./services.html">Subsubcategory 12.3</a></li>
+            <li><a href="./services.html">Subsubcategory 12.4</a></li>
+        </ul>
+    </div>
+</div>
+<div id="category4" class='cat-div row justify-content-center'>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">4.Subcategory 1</a></h2>
+        <hr/>
+        <ul>
+                <li><a href="./services.html">Subsubcategory 1.1</a></li>
+                <li><a href="./services.html">Subsubcategory 1.2</a></li>
+                <li><a href="./services.html">Subsubcategory 1.3</a></li>
+                <li><a href="./services.html">Subsubcategory 1.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">4.Subcategory 2</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 2.1</a></li>
+            <li><a href="./services.html">Subsubcategory 2.2</a></li>
+            <li><a href="./services.html">Subsubcategory 2.3</a></li>
+            <li><a href="./services.html">Subsubcategory 2.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">4.Subcategory 3</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 3.1</a></li>
+            <li><a href="./services.html">Subsubcategory 3.2</a></li>
+            <li><a href="./services.html">Subsubcategory 3.3</a></li>
+            <li><a href="./services.html">Subsubcategory 3.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">4.Subcategory 4</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 4.1</a></li>
+            <li><a href="./services.html">Subsubcategory 4.2</a></li>
+            <li><a href="./services.html">Subsubcategory 4.3</a></li>
+            <li><a href="./services.html">Subsubcategory 4.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">4.Subcategory 5</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 5.1</a></li>
+            <li><a href="./services.html">Subsubcategory 5.2</a></li>
+            <li><a href="./services.html">Subsubcategory 5.3</a></li>
+            <li><a href="./services.html">Subsubcategory 5.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">4.Subcategory 6</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 6.1</a></li>
+            <li><a href="./services.html">Subsubcategory 6.2</a></li>
+            <li><a href="./services.html">Subsubcategory 6.3</a></li>
+            <li><a href="./services.html">Subsubcategory 6.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">4.Subcategory 7</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 7.1</a></li>
+            <li><a href="./services.html">Subsubcategory 7.2</a></li>
+            <li><a href="./services.html">Subsubcategory 7.3</a></li>
+            <li><a href="./services.html">Subsubcategory 7.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">4.Subcategory 8</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 8.1</a></li>
+            <li><a href="./services.html">Subsubcategory 8.2</a></li>
+            <li><a href="./services.html">Subsubcategory 8.3</a></li>
+            <li><a href="./services.html">Subsubcategory 8.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">4.Subcategory 9</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 9.1</a></li>
+            <li><a href="./services.html">Subsubcategory 9.2</a></li>
+            <li><a href="./services.html">Subsubcategory 9.3</a></li>
+            <li><a href="./services.html">Subsubcategory 9.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">4.Subcategory 10</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 10.1</a></li>
+            <li><a href="./services.html">Subsubcategory 10.2</a></li>
+            <li><a href="./services.html">Subsubcategory 10.3</a></li>
+            <li><a href="./services.html">Subsubcategory 10.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">4.Subcategory 11</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 11.1</a></li>
+            <li><a href="./services.html">Subsubcategory 11.2</a></li>
+            <li><a href="./services.html">Subsubcategory 11.3</a></li>
+            <li><a href="./services.html">Subsubcategory 11.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">4.Subcategory 12</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 12.1</a></li>
+            <li><a href="./services.html">Subsubcategory 12.2</a></li>
+            <li><a href="./services.html">Subsubcategory 12.3</a></li>
+            <li><a href="./services.html">Subsubcategory 12.4</a></li>
+        </ul>
+    </div>
+</div>
+<div id="category5" class='cat-div row justify-content-center'>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">5.Subcategory 1</a></h2>
+        <hr/>
+        <ul>
+                <li><a href="./services.html">Subsubcategory 1.1</a></li>
+                <li><a href="./services.html">Subsubcategory 1.2</a></li>
+                <li><a href="./services.html">Subsubcategory 1.3</a></li>
+                <li><a href="./services.html">Subsubcategory 1.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">5.Subcategory 2</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 2.1</a></li>
+            <li><a href="./services.html">Subsubcategory 2.2</a></li>
+            <li><a href="./services.html">Subsubcategory 2.3</a></li>
+            <li><a href="./services.html">Subsubcategory 2.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">5.Subcategory 3</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 3.1</a></li>
+            <li><a href="./services.html">Subsubcategory 3.2</a></li>
+            <li><a href="./services.html">Subsubcategory 3.3</a></li>
+            <li><a href="./services.html">Subsubcategory 3.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">5.Subcategory 4</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 4.1</a></li>
+            <li><a href="./services.html">Subsubcategory 4.2</a></li>
+            <li><a href="./services.html">Subsubcategory 4.3</a></li>
+            <li><a href="./services.html">Subsubcategory 4.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">5.Subcategory 5</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 5.1</a></li>
+            <li><a href="./services.html">Subsubcategory 5.2</a></li>
+            <li><a href="./services.html">Subsubcategory 5.3</a></li>
+            <li><a href="./services.html">Subsubcategory 5.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">5.Subcategory 6</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 6.1</a></li>
+            <li><a href="./services.html">Subsubcategory 6.2</a></li>
+            <li><a href="./services.html">Subsubcategory 6.3</a></li>
+            <li><a href="./services.html">Subsubcategory 6.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">5.Subcategory 7</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 7.1</a></li>
+            <li><a href="./services.html">Subsubcategory 7.2</a></li>
+            <li><a href="./services.html">Subsubcategory 7.3</a></li>
+            <li><a href="./services.html">Subsubcategory 7.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">5.Subcategory 8</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 8.1</a></li>
+            <li><a href="./services.html">Subsubcategory 8.2</a></li>
+            <li><a href="./services.html">Subsubcategory 8.3</a></li>
+            <li><a href="./services.html">Subsubcategory 8.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">5.Subcategory 9</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 9.1</a></li>
+            <li><a href="./services.html">Subsubcategory 9.2</a></li>
+            <li><a href="./services.html">Subsubcategory 9.3</a></li>
+            <li><a href="./services.html">Subsubcategory 9.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">5.Subcategory 10</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 10.1</a></li>
+            <li><a href="./services.html">Subsubcategory 10.2</a></li>
+            <li><a href="./services.html">Subsubcategory 10.3</a></li>
+            <li><a href="./services.html">Subsubcategory 10.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">5.Subcategory 11</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 11.1</a></li>
+            <li><a href="./services.html">Subsubcategory 11.2</a></li>
+            <li><a href="./services.html">Subsubcategory 11.3</a></li>
+            <li><a href="./services.html">Subsubcategory 11.4</a></li>
+        </ul>
+    </div>
+    <div class="col-md-2 col">
+        <h2><a href="./services.html">5.Subcategory 12</a></h2>
+        <hr/>
+        <ul>
+            <li><a href="./services.html">Subsubcategory 12.1</a></li>
+            <li><a href="./services.html">Subsubcategory 12.2</a></li>
+            <li><a href="./services.html">Subsubcategory 12.3</a></li>
+            <li><a href="./services.html">Subsubcategory 12.4</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="cart">
+    <div id="products">
+    <table>
+        <tr>
+            <th></th>
+            <th>Ime</th>
+            <th>Poslodavac</th>
+            <th>Cena</th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <td><img src="pexels8.jpg" alt="Proizvod" class="img-fluid"/></td>
+            <td>Proizvod 1</td>
+            <td>Poslodavac 1</td>
+            <td>120000 din</td>
+            <td><form action="" method=""><input type="button" value="Ukloni" class="ukl"></form></td>
+            <td><form action="" method=""><input type="button" value="Poruči" class="por"></form></td>
+        </tr>
+        <tr>
+            <td><img src="pexels8.jpg" alt="Proizvod"/></td>
+            <td>Proizvod 2</td>
+            <td>Poslodavac 2</td>
+            <td>130000 din</td>
+            <td><form action="" method=""><input type="button" value="Ukloni" class="ukl"></form></td>
+            <td><form action="" method=""><input type="button" value="Poruči" class="por"></form></td>
+        </tr>
+        <tr>
+            <td><img src="pexels8.jpg" alt="Proizvod"/></td>
+            <td>Proizvod 3</td>
+            <td>Poslodavac 3</td>
+            <td>140000 din</td>
+            <td><form action="" method=""><input type="button" value="Ukloni" class="ukl"></form></td>
+            <td><form action="" method=""><input type="button" value="Poruči" class="por"></form></td>
+        </tr>
+    </table>
+    </div>
+    <p>Ukupno: <mark>390000 din</mark></p>
+</div>
+
+<div id="to-top">
+    <button id="to-top-btn">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+</div>
+<footer class='w-100'>
+    <div class=" pt-4 w-100">
+        <div class="i"><a href=""><i class="fab fa-facebook-f"></i></a></div>
+        <div class="i"><a href=""><i class="fab fa-instagram"></i></a></div>
+        <div class="i"><a href=""><i class="fab fa-linkedin-in"></i></a></div>
+        <div class="i"><a href=""><i class="fab fa-twitter"></i></a></div>
+        <div class="i"><a href=""><i class="fab fa-youtube"></i></a></div>
+    </div>
+    <hr class='w-75 mx-auto'/>
+    <div class="text-center">
+        <p>&copy;Copyright <mark>Poslovi online</mark> - sva prava zadržana!</p>
+    </div>
+</footer>
+</html>
