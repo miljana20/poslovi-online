@@ -55,18 +55,63 @@
 </header>
 <div id="auth-div">
     <ul>
-        <li><a href="./home.html">Moj Profil</a></li>
-        <li><a href="./home.html">Prijava</a></li>
-        <li><a href="./home.html">Registracija</a></li>
+        <li><a href="{{ route('profile') }}">Moj Profil</a></li>
+        <li><a href="#!" id="l-modal">Prijava</a></li>
+        <li><a href="#!" id="r-modal">Registracija</a></li>
     </ul>
 </div>
 <div id="mini-nav">
     <ul>
-        <li><a href="./home.html">Početna</a></li>
-        <li><a href="./services.html">Ponuda</a></li>
-        <li><a href="./home.html">Moj Profil</a></li>
-        <li><a href="./home.html">Prijava</a></li>
+        <li><a href="{{ route('home') }}">Početna</a></li>
+        <li><a href="{{ route('services') }}">Ponuda</a></li>
+        <li><a href="{{ route('profile') }}">Moj Profil</a></li>
+        <li><a href="#!" id="l-modal-m">Prijava</a></li>
+        <li><a href="#!" id="r-modal-m">Registracija</a></li>
     </ul>
+</div>
+<div id="modal-bg">
+    <div id="modal-l" class="p-5 rounded">
+        <span class="close-login-modal">x</span>
+        <h2>Prijavite se</h2>
+        <form action="" method='' id='login-form'>
+            <div class="c-e-div">
+                <input type="text" name="login-email" id="login-email" placeholder='Email ili korisničko ime'/>
+            </div>
+            <div class="c-e-div">
+                <input type="password" name="login-password" id="login-password" placeholder='Lozinka'/>
+            </div>
+            <div class="c-e-div">
+                <input type="button" value="Prijavi se" id='login-message-btn'>
+            </div>
+        </form>
+    </div>
+    <div id="modal-r" class="p-5 rounded">
+        <span class="close-login-modal r">x</span>
+        <h2>Registrujte se</h2>
+        <form action="" method='' id='registar-form'>
+                    <div class="c-e-div">
+                        <input type="text" name="registar-fullname" id="registar-fullname" placeholder='Puno ime'/>
+                    </div>
+                    <div class="c-e-div">
+                        <input type="email" name="registar-email" id="registar-email" placeholder='Email'/>
+                    </div>
+                    <div class="c-e-div">
+                        <input type="text" name="registar-username" id="registar-username" placeholder='Korisničko ime'/>
+                    </div>
+                    <div class="c-e-div">
+                        <input type="password" name="registar-password" id="registar-password" placeholder='Lozinka'/>
+                    </div>
+                    <div class="c-e-div">
+                        <input type="password" name="registar-passwordc" id="registar-passwordc" placeholder='Potvrdite lozinku'/>
+                    </div>
+                    <div class="c-e-div">
+                        <input type="file" name="registar-img" id="registar-img" value='img'/>
+                    </div>
+                    <div class="c-e-div">
+                        <input type="button" value="Registruj se" id='registar-message-btn'>
+                    </div>
+                </form>
+    </div>
 </div>
 
 <div id="category1" class='cat-div row justify-content-center'>
