@@ -81,7 +81,7 @@ $(document).ready(function(){
         <div class="kupljeno row">
             <div class="col-lg-4 col-sm-6 col-12 m0">
                     <div class="card my-3">
-                        <img src="../assets/img/pexels8.jpg" class="card-img-top" alt="...">
+                        <img src="./pexels8.jpg" class="card-img-top" alt="...">
                         <div class="card-body p-2">
                             <h5 class="card-title">Proizvod 1</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -90,7 +90,7 @@ $(document).ready(function(){
                                 Kupljeno od:
                                 </div>
                                 <div class="col-6 row">
-                                    <img src="../assets/img/pexels8.jpg" alt="user" class='user-img'/>
+                                    <img src="./pexels8.jpg" alt="user" class='user-img'/>
                                     <span>User1210</span>
                                 </div>
                             </div>
@@ -99,7 +99,7 @@ $(document).ready(function(){
             </div>
             <div class="col-lg-4 col-sm-6 col-12 m0">
                     <div class="card my-3">
-                        <img src="../assets/img/pexels8.jpg" class="card-img-top" alt="...">
+                        <img src="./pexels8.jpg" class="card-img-top" alt="...">
                         <div class="card-body p-2">
                             <h5 class="card-title">Proizvod 2</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -108,7 +108,7 @@ $(document).ready(function(){
                                 Kupljeno od:
                                 </div>
                                 <div class="col-6 row">
-                                    <img src="../assets/img/pexels8.jpg" alt="user" class='user-img'/>
+                                    <img src="./pexels8.jpg" alt="user" class='user-img'/>
                                     <span>User1210</span>
                                 </div>
                             </div>
@@ -117,7 +117,7 @@ $(document).ready(function(){
             </div>
             <div class="col-lg-4 col-sm-6 col-12 m0">
                     <div class="card my-3">
-                        <img src="../assets/img/pexels8.jpg" class="card-img-top" alt="...">
+                        <img src="./pexels8.jpg" class="card-img-top" alt="...">
                         <div class="card-body p-2">
                             <h5 class="card-title">Proizvod 3</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -126,7 +126,7 @@ $(document).ready(function(){
                                     Kupljeno od:
                                 </div>
                                 <div class="col-6 row">
-                                    <img src="../assets/img/pexels8.jpg" alt="user" class='user-img'/>
+                                    <img src="./pexels8.jpg" alt="user" class='user-img'/>
                                     <span>User1210</span>
                                 </div>
                             </div>
@@ -146,25 +146,25 @@ $(document).ready(function(){
             </thead>
             <tbody>
                 <tr>
-                    <td><img src="../assets/img/pexels8.jpg" alt="slika"></td>
+                    <td><img src="./pexels8.jpg" alt="slika"></td>
                     <td>PeraP</td>
                     <td>12.2.2022.</td>
                     <td><a href="{{route('services')}}">Više</a></td>
                 </tr>
                 <tr>
-                    <td><img src="../assets/img/pexels8.jpg" alt="slika"></td>
+                    <td><img src="./pexels8.jpg" alt="slika"></td>
                     <td>MikaM</td>
                     <td>12.6.2022.</td>
                     <td><a href="{{route('services')}}">Više</a></td>
                 </tr>
                 <tr>
-                    <td><img src="../assets/img/pexels8.jpg" alt="slika"></td>
+                    <td><img src="./pexels8.jpg" alt="slika"></td>
                     <td>ŽikaŽ</td>
                     <td>12.2.2042.</td>
                     <td><a href="{{route('services')}}">Više</a></td>
                 </tr>
                 <tr>
-                    <td><img src="../assets/img/pexels8.jpg" alt="slika"></td>
+                    <td><img src="./pexels8.jpg" alt="slika"></td>
                     <td>PinkPanter</td>
                     <td>14.2.2082.</td>
                     <td><a href="{{route('services')}}">Više</a></td>
@@ -181,7 +181,7 @@ $(document).ready(function(){
             <div class="usluge row justify-content-center">
                 <div class="usluga col-11 col-md-5">
                     <div class="img">
-                        <img src="../assets/img/pexels8.jpg" alt="slika" class="img-fluid"/>
+                        <img src="./pexels8.jpg" alt="slika" class="img-fluid"/>
                     </div>
                     <div class="data">
                         <h4>Usluga 1</h4>
@@ -191,7 +191,7 @@ $(document).ready(function(){
                 </div>
                 <div class="usluga col-11 col-md-5">
                     <div class="img">
-                        <img src="../assets/img/pexels8.jpg" alt="slika" class="img-fluid"/>
+                        <img src="./pexels8.jpg" alt="slika" class="img-fluid"/>
                     </div>
                     <div class="data">
                         <h4>Usluga 2</h4>
@@ -205,7 +205,7 @@ $(document).ready(function(){
         <div class="prodato row">
             <div class="col-lg-4 col-sm-6 col-12 m0">
                     <div class="card my-3">
-                        <img src="../assets/img/pexels8.jpg" class="card-img-top" alt="...">
+                        <img src="./pexels8.jpg" class="card-img-top" alt="...">
                         <div class="card-body p-2">
                             <h5 class="card-title">Proizvod 1</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -214,7 +214,7 @@ $(document).ready(function(){
                                     Kupio:
                                 </div>
                                 <div class="col-6 row">
-                                    <img src="../assets/img/pexels8.jpg" alt="user" class='user-img'/>
+                                    <img src="./pexels8.jpg" alt="user" class='user-img'/>
                                     <span>User1210</span>
                                 </div>
                             </div>
@@ -223,7 +223,7 @@ $(document).ready(function(){
             </div>
             <div class="col-lg-4 col-sm-6 col-12 m0">
                     <div class="card my-3">
-                        <img src="../assets/img/pexels8.jpg" class="card-img-top" alt="...">
+                        <img src="./pexels8.jpg" class="card-img-top" alt="...">
                         <div class="card-body p-2">
                             <h5 class="card-title">Proizvod 2</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -232,7 +232,7 @@ $(document).ready(function(){
                                     Kupio:
                                 </div>
                                 <div class="col-6 row">
-                                    <img src="../assets/img/pexels8.jpg" alt="user" class='user-img'/>
+                                    <img src="./pexels8.jpg" alt="user" class='user-img'/>
                                     <span>User1210</span>
                                 </div>
                             </div>
@@ -241,7 +241,7 @@ $(document).ready(function(){
             </div>
             <div class="col-lg-4 col-sm-6 col-12 m0">
                     <div class="card my-3">
-                        <img src="../assets/img/pexels8.jpg" class="card-img-top" alt="...">
+                        <img src="./pexels8.jpg" class="card-img-top" alt="...">
                         <div class="card-body p-2">
                             <h5 class="card-title">Proizvod 3</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -250,7 +250,7 @@ $(document).ready(function(){
                                     Kupio:
                                 </div>
                                 <div class="col-6 row price">
-                                    <img src="../assets/img/pexels8.jpg" alt="user" class='user-img'/>
+                                    <img src="./pexels8.jpg" alt="user" class='user-img'/>
                                     <span>User1210</span>
                                 </div>
                             </div>
