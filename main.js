@@ -59,6 +59,11 @@ $(document).ready(function(){
         event.stopPropagation();
     });
 
+    $('#keyword').on('blur', function(){
+        let html = `<h2>Nema rezultata</h2>`
+        $('#services-div').html(html)
+    });
+
     $(window).scroll(function(){
         if($(this).scrollTop() > 300){
             $('#to-top').fadeIn();
