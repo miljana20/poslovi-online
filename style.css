@@ -23,6 +23,9 @@ body a {
 body a:hover {
   text-decoration: none;
 }
+body a.crd {
+  color: initial;
+}
 body h1 {
   margin: 20px auto;
   text-align: center;
@@ -138,7 +141,7 @@ body header {
   background-color: rgba(255, 255, 255, 0.6);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  height: 60px;
+  height: 100px;
 }
 body header.header-bg {
   background-color: rgba(255, 255, 255, 0.6);
@@ -146,14 +149,14 @@ body header.header-bg {
           backdrop-filter: blur(5px);
 }
 body header .h-img {
-  height: 60px;
+  height: 100px;
 }
 body header ul {
   display: flex;
   justify-content: end;
 }
 body header ul li {
-  margin: 20px 5px 0px 5px;
+  margin: 30px 5px 0px 5px;
   padding: 0px 15px 0px 0px;
 }
 body header ul li.profile-icon {
@@ -162,7 +165,7 @@ body header ul li.profile-icon {
 body header ul li.link {
   text-transform: uppercase;
   font-weight: 400;
-  font-size: large;
+  font-size: 23px;
 }
 body header ul li.link:hover a {
   color: #777;
@@ -173,6 +176,10 @@ body header ul li.link a {
   color: #2c8414;
   transition: 1s;
 }
+body header ul .icon {
+  font-size: 20px;
+  margin-top: 30px;
+}
 body header ul .icon a {
   color: #777;
 }
@@ -180,17 +187,15 @@ body header ul .icon a:hover {
   color: #9c1c2c;
   transition: 0.5s;
 }
-body header ul .icon.profile-icon {
+body header ul .icon a div {
   background-color: #2c8414;
   padding: 5px 10px;
   border-radius: 50%;
   text-align: center;
   transition: 1s;
-}
-body header ul .icon.profile-icon a {
   color: #ffffff;
 }
-body header ul .icon.profile-icon:hover {
+body header ul .icon a div:hover {
   transition: 1s;
   background-color: #777;
 }
@@ -582,7 +587,7 @@ body #profil #content .ponuda .usluge .usluga {
 body #profil #content .ponuda .usluge .usluga .img {
   width: 60%;
   position: absolute;
-  top: -40%;
+  top: -20%;
   left: 20%;
 }
 body #profil #content .ponuda .usluge .usluga .img img {
@@ -1128,7 +1133,7 @@ body #product-div #product-holder #product-img .u-img {
   margin: 10px;
 }
 body #contact {
-  background-image: url("../img/young-people-sharing-digital-content-on-marketing-2022-12-09-04-44-35-utc.jpg");
+  background-image: url("./young-people-sharing-digital-content-on-marketing-2022-12-09-04-44-35-utc.jpg");
   width: 100%;
   height: 100vh;
   background-position: center;
@@ -1213,7 +1218,7 @@ body #contact #cover #contact-data .c-data span {
   color: #777;
 }
 body #auth {
-  background-image: url("../img/african-american-man-sitting-in-front-of-computer-2022-11-15-05-59-50-utc.jpg");
+  background-image: url("./african-american-man-sitting-in-front-of-computer-2022-11-15-05-59-50-utc.jpg");
   width: 100%;
   height: 150vh;
   background-position: center;
