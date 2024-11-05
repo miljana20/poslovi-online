@@ -47,10 +47,16 @@ $(document).ready(function(){
         $('#modal-bg').css('display', 'flex');
     });
 
-    $('.close-login-modal').click(function(){
+    $('#modal-r, #modal-l').on('mouseout', function(){
+        $('.close-login-modal, #modal-bg').click(function(){
         $('#modal-r').css('display', 'none');
         $('#modal-l').css('display', 'none');
         $('#modal-bg').css('display', 'none');
+        });
+    })
+    
+    $('#modal-r, #modal-l').click(function(event) {
+        event.stopPropagation();
     });
 
     $(window).scroll(function(){
